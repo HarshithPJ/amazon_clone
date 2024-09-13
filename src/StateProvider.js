@@ -1,14 +1,3 @@
-import React, { createContext, useContext, useReducer } from "react";
-
-// Prepares the dataLayer
-export const StateContext = createContext();
-
-// Wrap our app and provide the Data layer
-export const StateProvider = ({ reducer, initialState, children }) => (
-  <StateContext.Provider value={useReducer(reducer, initialState)}>
-    {children}
-  </StateContext.Provider>
-);
-
-// Pull information from the data layer
-export const useStateValue = () => useContext(StateContext);
+version https://git-lfs.github.com/spec/v1
+oid sha256:5863a35808fe4c1283d1aab8b463413fb37eb98899533a2a2c97004b3636125a
+size 473
